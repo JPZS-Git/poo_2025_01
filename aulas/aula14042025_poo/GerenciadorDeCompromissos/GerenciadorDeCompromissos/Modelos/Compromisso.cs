@@ -59,7 +59,7 @@ private void _validarHoraInformada(string hora) {
 private void _validarHoraValidaParaCompromisso() {
     TimeSpan limite = new TimeSpan(18,0,59);
         if (TimeSpan.Compare(_hora,limite) == -1) {
-            throw new Exception($"Hora {_hora} é inferior a 18:00.");
+            throw new Exception($"Hora {_hora} é inferior a 18:00, deve-se marcar depois das 18:00.");
         }
     }
 
